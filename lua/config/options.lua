@@ -3,6 +3,7 @@
 -- Add any additional options here
 
 vim.opt.guicursor =
-  "a:block,i-c-ci:ver25-blinkwait700-blinkoff400-blinkon250,r-cr-o:hor50-blinkwait700-blinkoff400-blinkon250"
+  "a:block-blinkon0,i-c-ci:ver30-iCursor-blinkwait300-blinkon200-blinkoff150,r-cr-o:ver30-iCursor-blinkwait300-blinkon200-blinkoff150"
 vim.opt.relativenumber = false
 vim.opt.number = true
+vim.opt.cursorline = false
