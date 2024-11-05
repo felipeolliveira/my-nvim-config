@@ -1,10 +1,10 @@
 return {
   {
-    "crnvl96/lazydocker.nvim",
-    event = "VeryLazy",
-    opts = {}, -- automatically calls `require("lazydocker").setup()`
+    "BrunoKrugel/lazydocker.nvim",
+    cmd = "LazyDocker",
+    -- optional for floating window border decoration
     dependencies = {
-      "MunifTanjim/nui.nvim",
+      "nvim-lua/plenary.nvim",
     },
   },
 }
