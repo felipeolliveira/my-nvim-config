@@ -5,11 +5,12 @@
 local map = vim.keymap.set
 local wk = require("which-key")
 
--- Navigation
+-- Editor
 map("n", "<tab>", "<cmd>bnext<cr>", { desc = "Next Tab" })
 map("n", "<S-tab>", "<cmd>bprevious<cr>", { desc = "Previous Tab" })
-map({ "n", "i", "v", "o", "c" }, "<C-z>", "<cmd>u<cr>", { desc = "Undo with classic ctrl-z" })
 map("n", "<leader><space>", LazyVim.pick("files", { root = false }), { desc = "Find Files (cwd)" })
+map({ "n", "i", "v", "o", "c" }, "<C-z>", "<cmd>u<cr>", { desc = "Undo with classic ctrl-z" })
+map({ "n", "i", "v", "o", "c" }, "<CS-z>", "<cmd>redo<cr>", { desc = "Redo with classic ctrl-shift-z" })
 
 -- Files
 map("n", "<leader>fd", "<cmd>call delete(expand('%')) | bdelete!<cr>", { desc = "Delete current file and buffer" })
