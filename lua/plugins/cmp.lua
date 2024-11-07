@@ -28,6 +28,8 @@ return {
       opts.mapping = vim.tbl_extend("force", opts.mapping, {
         ["<Esc>"] = cmp.mapping.abort(),
         ["<CR>"] = cmp.config.disable,
+        ["<Up>"] = cmp.mapping.abort(),
+        ["<Down>"] = cmp.mapping.abort(),
         ["<C-l>"] = cmp.mapping.confirm({ select = true }),
         ["<Tab>"] = cmp.mapping(function(fallback)
           if cmp.visible() then
