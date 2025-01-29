@@ -16,7 +16,7 @@ map("n", "<leader>fd", "<cmd>call delete(expand('%')) | bdelete!<cr>", { desc = 
 
 -- Terminal
 map("n", "<C-/>", function()
-  LazyVim.terminal()
+  Snacks.terminal()
 end, { desc = "Terminal (cwd)" })
 
 -- Docker
