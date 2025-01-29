@@ -55,4 +55,15 @@ return {
     i(2, "Container()"),
     t({ ";", "  }", "}" }),
   }),
+
+  -- CustomPainter Widget Snippet
+  s("painter", {
+    t("class "),
+    i(1, "MyPainter"),
+    t({ " extends CustomPainter {", "  @override", "  void paint(Canvas canvas, Size size) {", "    " }),
+    i(2, "// Your painting code here"),
+    t({ "", "  }", "", "  @override", "  bool shouldRepaint(covariant CustomPainter oldDelegate) {", "    " }),
+    i(3, "return false;"),
+    t({ "", "  }", "}" }),
+  }),
 }
