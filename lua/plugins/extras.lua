@@ -1,5 +1,5 @@
 return {
-  { import = "lazyvim.plugins.extras.ai.copilot" },
+  -- { import = "lazyvim.plugins.extras.ai.copilot" },
   { import = "lazyvim.plugins.extras.coding.luasnip" },
   { import = "lazyvim.plugins.extras.lsp.none-ls" },
   { import = "lazyvim.plugins.extras.lang.go" },
